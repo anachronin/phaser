@@ -996,7 +996,7 @@ var World = new Class({
         {
             body = bodies[i];
 
-            if (body.enable)
+            if (body && body.enable)
             {
                 body.update(delta);
             }
